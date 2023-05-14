@@ -1,0 +1,114 @@
+import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class CustomsFormApp extends Application {
+    public void start(Stage primaryStage){
+        CustomsForm customForm = new CustomsForm();
+        customForm.setAlignment(Pos.TOP_CENTER);
+        customForm.setStyle("-fx-background-color: skyblue");
+
+        Scene scene = new Scene(customForm,500,500);
+
+        primaryStage.setTitle("Custom Form");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+}
+
+import javafx.event.ActionEvent;
+import javafx.scene.Group;
+import javafx.scene.control.CheckBox;
+import javafx.scene.layout.GridPane;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+
+public class CustomForm extends GridPane {
+    Text phrase;
+    CheckBox tiger, gold, cash, plants, gun;
+
+    public CustomForm(){
+        Font font = new Font(50);
+        Font font1 = new Font(30);
+        Font font2 = new Font(20);
+        Text title = new Text("Custom Form");
+        Text restriction = new Text("Restricted items: ");
+        restriction.setFont(font1);
+        title.setFont(font);
+        phrase = new Text("Pay $0");
+        tiger = new CheckBox("Tiger");
+        gold = new CheckBox("gold>5000$");
+        cash = new CheckBox("cash>10000$");
+        plants = new CheckBox("plants");
+        gun = new CheckBox("gun");
+
+        phrase.setFont(font1);
+        tiger.setFont(font2);
+        gold.setFont(font2);
+        cash.setFont(font2);
+        plants.setFont(font2);
+        gun.setFont(font2);
+
+        Group group = new Group(tiger, gold, cash, plants, gun);
+        group.setTranslateX(100);
+
+        tiger.setTranslateX(100);
+        gold.setTranslateX(100);
+        cash.setTranslateX(100);
+        plants.setTranslateX(100);
+        gun.setTranslateX(100);
+
+//        setAlignment(Pos.CENTER);
+//        tiger.setTranslateX(100);
+//        gold.setTranslateX(tiger.getScaleX()-gold.getScaleX());
+//        cash.setLayoutX(tiger.getLayoutX());
+//        plants.setLayoutX(tiger.getLayoutX());
+//        gun.setLayoutX(tiger.getLayoutX());
+
+        tiger.setOnAction(this::processBox);
+        gold.setOnAction(this::processBox);
+        cash.setOnAction(this::processBox);
+        plants.setOnAction(this::processBox);
+        gun.setOnAction(this::processBox);
+        //setAlignment(Pos.BOTTOM_LEFT);
+
+        //setHgap(200);
+        //getChildren().addAll(title, restriction, tiger, gold, cash, plants, gun, phrase);
+        add(title, 0 ,0);
+        add(restriction,0,1);
+        add(tiger,0,2);
+        add(gold,0,3);
+        add(cash,0,4);
+        add(plants,0,5);
+        add(gun,0,6);
+        add(phrase,0,7);
+        setVgap(20);
+    }
+
+    public void processBox(ActionEvent event){
+        int pay = 0;
+
+        if (tiger.isSelected()){
+            pay += 10000;
+        }
+        if (gold.isSelected()){
+            pay += 10000;
+        }
+        if (cash.isSelected()) {
+            pay += 10000;
+        }
+        if (plants.isSelected()) {
+            pay += 10000;
+        }
+        if (gun.isSelected()) {
+            pay += 10000;
+        }
+
+        phrase.setText("Pay $ "+pay);
+    }
+
+//    public CheckBox fillString(int x, CheckBox a){
+//        return new CheckBox(a.getText() + "   ".repeat(x - a.getText().length()) );
+//    }
+}
