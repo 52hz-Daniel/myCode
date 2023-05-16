@@ -1,0 +1,85 @@
+.sa-module1{
+    width: 1024px;
+    height: 529px;
+    box-sizing: border-box;
+    padding: 40px 0 0 85px;
+    background: #F3F3F3;
+}
+.sa-module1 .title{
+    font-size: 39px;
+    font-weight: bold;
+    padding-bottom: 62px;
+    color: #0B235F;
+}
+.sa-module1 .tips{
+    font-size: 31px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    color: #0B235F;
+}
+.sa-module1 .con{
+    width: 816px;
+    text-align: justify;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0D1730;
+}
+.sa-module2{
+    width: 1024px;
+    height: 1018px;
+    box-sizing: border-box;
+    padding: 95px 0 0 85px;
+    background: #041366;
+}
+.sa-module2 .title{
+    font-size: 23px;
+    font-weight: bold;
+    color: #F1B069;
+    margin-bottom: 30px;
+}
+.sa-module2 .con1{
+    width: 747px;
+    margin-bottom: 38px;
+}
+.sa-module2 .con2{
+    width: 769px;
+}
+.sa-module2 .con1,.sa-module2 .con2{
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+    text-align: justify;
+}
+.sa-module3{
+    width: 1024px;
+    box-sizing: border-box;
+    padding: 73px 0 0 85px;
+    background: #F3F3F3;
+}
+.sa-module3 .title{
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 33px;
+}
+.sa-module3 .con{
+    font-size: 12px;
+    line-height: 16px;
+    width: 770px;
+    text-align: justify;
+}
+.sa-module3 .img1{
+    width: 896px;
+    height: 397px;
+    margin-top: 38px;
+}
+.btnIcon-box{
+    margin-top: 85px;
+    box-sizing: border-box;
+    padding-right: 116px;
+    overflow: hidden;
+}
+.sa-module3 .btnIcon{
+    width: 213px;
+    height: 133px;
+    float: right;
+}

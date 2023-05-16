@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+<body>
+    <div class="y-content">
+        <div class="d-module1">
+            <h1>DESIGN</h1>
+            <h2>What We Are Trying To Achieve</h2>
+            <p>- Production of bacterial cellulose in large scale via the fermentation of G.xylinus</p>
+            <p>- Purification of SpyCatcher003 with Cellulose Binding Modules</p>
+            <p>- Purification of SpyTag003 with structural proteins</p>
+        </div>
+        <div class="d-module2">
+            <h2>Fermentation Of G. Xylinus</h2>
+            <p>Considering that G. xylinus is not a model organism and the transformation method of G. xylinus has not been thoroughly investigated, we did not 
+                engineer G. xylinus for a higher production of bacterial cellulose, so the research for gene expressions will not be involved. However, we did 
+                consider other ways to increase its production rate.
+            </p>
+            <p>Because we are not modifying the strain, then we must search for the best condition where G. xylinus can be most productive. From two aspects, 
+                we decided to approach this problem: culture medium and culture device. We designed a dynamic bioreactor where G. xylinus can get both 
+                enough nutrients and sufficient oxygen for growth. When selecting the culture medium, we first tested the HS medium.
+            </p>
+            <p>HS medium, short for Hestrin-Shramm medium, is a traditional culture medium for G. xylinus. Unfortunately, it cannot provide G. Xylinus with 
+                enough nutrients for growth when G. xylinus is dynamically cultured in a large quantity1.
+            </p>
+            <p>Here is where the YME medium (Yamanaka Mathematically optimized Ethanol Media) is introduced; it can provide a lot more nutrients than HS  
+                (Table1). However, these nutrients can not come from nowhere; it is due to the extremely large amount of yeast extract in the medium. To  
+                conserve energy and reduce waste, we considered many alternatives for yeast extract and locked on beer dregs. More details available on our  
+                Human Practices page.
+            </p>
+            <a href="" class="redBtn">HUMAN PRACTICE</a>
+        </div>
+        <div class="d-module3">
+            <h3>Structural Protein Crosslinking</h3>
+            <p>A good piece of leather should be tensile, strong, and flexible. To achieve these standards, we crosslinked recombinant proteins critical to these  
+                facets between cellulose layers, the place where it is the weakest (Figure 1).
+            </p>
+            <img src="https://2020.igem.org/wiki/images/2/20/T--BNDS_China--Design_Figure_1.png" alt="">
+            <i class="imgTitle">Figure 1. Interaction ietween recombinant proteins (created with BioRender.com)</i>
+            <p class="con">Collagen is the main component of natural leather. So, we chose collagen-like proteins to imitate the properties of collagen2,3. We also realized 
+                that leather should be wear-resistant and robust, and we synthesized spider fibroin to achieve this4.
+            </p>
+            <p class="con">These functional proteins will be linked with elastin when synthesized. Proteins synthesized separately will be connected, trying to reach infinity  
+                affinity to speed the reaction up. Infinity affinity is achieved with SpyTag003 and SpyCatcher003; they are specialized proteins that can link  
+                together through isopeptide bonds5. Now we constructed a network of proteins. To combine this network with the network of cellulose, we need  
+                cellulose-binding modules (CBMs). They hold on to the cellulose fibers, providing the fulcrums for other proteins6.
+            </p>
+        </div>
+        <div class="d-module4">
+            <h3>Protein Synthesis In Pichia Pastoris</h3>
+            <img src="https://2020.igem.org/wiki/images/1/1b/T--BNDS_China--Design_Figure_2.png" alt="">
+            <i class="imgTitle white">Figure 1. Interaction ietween recombinant proteins (created with BioRender.com)</i>
+            <img src="https://2020.igem.org/wiki/images/6/62/T--BNDS_China--Design_Figure_3.png" alt="">
+            <i class="imgTitle white">Figure 3. The plasmid expressing collagen-like proteins with SpyTag003 in P. pastoris</i>
+            <img src="https://2020.igem.org/wiki/images/f/f7/T--BNDS_China--Design_Figure_4.png" alt="">
+            <i class="imgTitle white">Figure 4. The plasmid expressing spider fibroins with SpyTag003 in P. pastoris</i>
+            <p>We choose the AOX1 promoter for its high level of expression of recombinant proteins when induced by methanol for expression in P. pastoris. 
+                While the cellulose-binding modules clamp onto cellulose, the SpyCatcher003 are ready to connect with SpyTag003 through peptide bonds; this 
+                can significantly approach infinity affinity and accelerate the reaction. SpyCatcher003 and SpyTag003 are the elastin-like polypeptides; they 
+                connect neighboring proteins and enhance the BC's performance. mRFP is added to indicates successful production. 
+            </p>
+            <p>
+                Similar to the production of CBM. The spider fibroins and collagens are both expressed twice and connected to Spy-Tag with the elastin-like 
+                polypeptide. Notice the part that codes for collagen have V domain: V domain is responsible for stabilizing the downstream protein folding when 
+                collagen-like protein is within the ORF7,8. As the recombinant proteins get 'sandwiched' between cellulose layers, they quickly connect to the 
+                cellulose-binding modules through interactions between SpyTag003 and SpyCatcher003, fixed into position. These recombinant proteins also 
+                carry an indicator, sfGFP, to identify and distinguish it.
+            </p>
+        </div>
+        <div class="d-module4 d-module5">
+            <h3>Protein Synthesis In Escherichia Coli</h3>
+            <img src="https://2020.igem.org/wiki/images/1/1b/T--BNDS_China--Design_Figure_2.png" alt="">
+            <i class="imgTitle">Figure 5. plasmid expressing collagen in E. coli</i>
+            <img src="https://2020.igem.org/wiki/images/6/62/T--BNDS_China--Design_Figure_3.png" alt="">
+            <i class="imgTitle">Figure 6. plasmid expressing CBM in E. coli</i>
+            <img src="https://2020.igem.org/wiki/images/f/f7/T--BNDS_China--Design_Figure_4.png" alt="">
+            <i class="imgTitle">Figure 7. plasmid expressing spider fibroins in E. coli</i>
+            <p>Unfortunately, it’s troublesome for us to engineer P. pastoris because of its low transformation efficiency. Therefore, we decided to adopt an E. 
+                coli protein expression system as our backup. The proteins expressed are same but we slightly adjusted how it will be expressed. The T7 promoter 
+                can combine with T7 RNA synthase. When inhibition at lac operator is being relieved by IPTG, it can help express the proteins and increase 
+                expression rate significantly.
+            </p>
+        </div>
+        <div class="d-module6">
+            <h4>Experiments</h4>
+            <p>
+                For protein Synthesis in Pichia Pastoris, these shuttle plasmids are first transformed into competent E. coli cells, where they are massively 
+                replicated. Then the plasmids are collected and transformed into Pichia pastoris for gene expression under methanol conditions.
+                For protein Synthesis in Escherichia coli, we transform the backbone PET30 with proper CDS into E. coil BL21D3.
+                6*His tags are expressed with the recombinant proteins for protein purification through nickel affinity chromatography.
+            </p>
+            <h4>References</h4>
+            <p class="con">
+                1. Krystynowicz, A. et al. Factors affecting the yield and properties of bacterial cellulose. J Ind Microbiol Biotechnol 29, 189-195, doi:10.1038/
+                sj.jim.7000303 (2002).<br />
+                2. Peng, Y. Y. et al. Towards scalable production of a collagen-like protein from Streptococcus pyogenes for biomedical applications. Microb Cell <br />
+                3. Xu, Y., Keene, D. R., Bujnicki, J. M., Hook, M. & Lukomski, S. Streptococcal Scl1 and Scl2 proteins form collagen-like triple helices. J Biol Chem 
+                277, 27312-27318, doi:10.1074/jbc.M201163200 (2002).<br />
+                4. Xu, M. & Lewis, R. V. Structure of a protein superfiber: spider dragline silk. Proc Natl Acad Sci U S A 87, 7120-7124, doi:10.1073/pnas.87.18.7120 
+                (1990).<br />
+                5. Keeble, A. H. et al. Approaching infinite affinity through engineering of peptide-protein interaction. Proc Natl Acad Sci U S A, doi:10.1073/
+                pnas.1909653116 (2019).<br />
+                6. Mohammadi, P. et al. Biomimetic composites with enhanced toughening using silk-inspired triblock proteins and aligned nanocellulose 
+                reinforcements. Sci Adv 5, eaaw2541, doi:10.1126/sciadv.aaw2541 (2019).<br />
+                7. Parmar, P. A. et al. Temporally degradable collagen-mimetic hydrogels tuned to chondrogenesis of human mesenchymal stem cells. Biomaterials 
+                99, 56-71, doi:10.1016/j.biomaterials.2016.05.011 (2016).<br />
+                8.Peng, Y. Y., Stoichevska, V., Schacht, K., Werkmeister, J. A. & Ramshaw, J. A. Engineering multiple biological functional motifs into a blank 
+                collagen-like protein template from Streptococcus pyogenes. J Biomed Mater Res A 102, 2189-2196, doi:10.1002/jbm.a.34898 (2014).
+            </p>
+        </div>
+    </div>
+    <iframe src="./footer.html" style="width: 100%;height: 674px;" frameborder="0"></iframe>
+</body>
+</html>

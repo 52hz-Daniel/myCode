@@ -1,0 +1,91 @@
+package CrtTask;
+
+import javafx.geometry.Pos;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
+
+public class CreateTask_Purpose extends Pane {
+    Image q3a;
+    ImageView q3aVIew;
+    Boolean checkAnswer = false;
+    VBox vBox;
+    ProgressBar progressBar;
+    CheckBox c1, c2, c3, c4, c5, c6;
+    double finished= 0;
+    CheckBox[] checkBox;
+    public CreateTask_Purpose(){
+        setUserData(finished);
+        progressBar = new ProgressBar(0);
+        q3a = new Image("q3a.png");
+        q3aVIew = new ImageView();
+        q3aVIew.setPreserveRatio(true);
+        q3aVIew.setFitWidth(480);
+        Font font = Font.font("Verdana", FontWeight.NORMAL, FontPosture.ITALIC, 10);
+        Label label = new Label("程序目的和功能");
+        label.setFont(new Font(30));
+        Label label5 = new Label("评分标准");
+        label5.setFont(new Font(20));
+        Label label1 = new Label("视频展示了程序运行，包括:");
+
+        GridPane check1 = new GridPane();
+        c1 = new CheckBox("输入");
+        c2 = new CheckBox("程序功能");
+        c3 = new CheckBox("输出");
+        check1.addColumn(0, c1, c2, c3);
+        check1.setAlignment(Pos.CENTER);
+        check1.setVgap(10);
+
+        Label label6 = new Label("AND");
+        Label label7 = new Label("书面回答描述了:");
+        GridPane check2 = new GridPane();
+        c4 = new CheckBox("程序的整体功能");
+        c5 = new CheckBox("视频展现的是程序怎样的功能");
+        c6 = new CheckBox("视频展现的程序的输入和输出");
+        check2.addColumn(0, c4, c5, c6);
+        check2.setAlignment(Pos.CENTER);
+        check2.setVgap(10);
+        Label label2 = new Label("Click to view the example");
+        label2.setTextFill(Color.BLUE);
+        label2.setFont(font);
+        label2.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            checkAnswer = !checkAnswer; label2.setTextFill(checkAnswer ? Color.RED:Color.BLUE);});
+        label2.setOnMouseClicked(this::processClick);
+        Label label4 = new Label("判定规则");
+        label4.setFont(new Font(20));
+        Label label3 = new Label("评分时只看视频和书面回答3a\n" +
+                "视频一定要展现程序的运行效果，否则失分\n" +
+                "(不可以是截屏或梗概图板)");
+
+        vBox = new VBox(label, label5, label1, check1, label6, label7, check2, label4, label3, label2, progressBar, q3aVIew);
+        vBox.setAlignment(Pos.TOP_CENTER);
+        progressBar.setTranslateX(180);
+        ScrollPane scrollPane = new ScrollPane(vBox);
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollPane.setPrefSize(500,600);
+        getChildren().add(scrollPane);
+        setUserData(finished);
+        checkBox = new CheckBox[]{c1, c2, c3, c4, c5, c6};
+        for (CheckBox c :
+                checkBox) {
+            c.setOnMouseClicked(event -> {finished = 0; for (CheckBox ch: checkBox) {finished += ch.isSelected() ? 1 : 0;}
+                progressBar.setProgress(finished / checkBox.length);setUserData(finished);});
+        }
+
+    }
+
+    public void processClick(MouseEvent event){
+        q3aVIew.setImage(checkAnswer ? q3a : null);
+    }
+}

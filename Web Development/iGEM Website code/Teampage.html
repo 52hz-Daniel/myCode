@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAMPAGE</title>
+    <style>
+        .progressive {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            outline: none;
+            width: 250px;
+            height: 250px;
+        }
+
+        .progressive img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: 0;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+
+        .progressive img.preview {
+            filter: blur(2vw);
+            transform: scale(1.05);
+        }
+
+        .progressive img.reveal {
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            will-change: transform, opacity;
+            animation: progressiveReveal 1s ease-out;
+        }
+
+        @keyframes progressiveReveal {
+            0% {
+                transform: scale(1.05);
+                opacity: 0
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+
+
+        .testborder1 {
+            height: 460px;
+            width: 855px;
+        }
+
+        .testborder1 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .testborder3 {
+            width: 1024px;
+            height: 680px;
+            overflow: hidden;
+            margin: 0 auto;
+            box-sizing: border-box;
+            background-color: #f3f3f3;
+            padding: 0 85px 115px
+        }
+
+        .outFrame {
+            background-color: #041366;
+            width: 1024px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0 85px;
+            box-sizing: border-box;
+        }
+
+        .secondTopic {
+            color: #F1B069;
+        }
+
+        .secondTopic1 {
+            padding-top: 85px;
+        }
+
+
+        .imgOneLine {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 60px;
+        }
+
+        .note {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 250px;
+            height: 250px;
+            padding: 25px;
+            line-height: 12px;
+            color: #FFFFFF;
+            vertical-align: middle;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+
+        .img_bg {
+            width: 100%;
+            height: 100%;
+            background-image: url(./images/background.jpg);
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imgbox {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .name {
+            position: relative;
+            color: white;
+        }
+
+
+        .imgFrame {
+            width: 250px;
+            height: 250px;
+            box-sizing: border-box;
+        }
+
+        .mask {
+            width: 250px;
+            height: 250px;
+
+        }
+
+        .titleName {
+            font-weight: bold;
+            line-height: 20%;
+            color: #041366;
+            padding-top: 40px;
+            padding-bottom: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="y-content">
+        <div>
+            <div class="testborder3">
+                <div class="testborder">
+                    <h1 id="C1" class="titleName">OUR TEAM</h1>
+                </div>
+                <div class="testborder1">
+                    <img class="pictureAll" src="./images/APStatisticsXiaodaZhang.jpg" alt="Picture1" />
+                </div>
+            </div>
+
+            <div class="outFrame">
+                <div>
+                    <h2 id="C2" class="secondTopic secondTopic1">Team Leaders</h2>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div>
+                    <h2 id="C3" class="secondTopic">Team Members</h2>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div>
+                    <h2 id="C4" class="secondTopic">Advisors & Instructor</h2>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+                <div>
+                    <h2 id="C5" class="secondTopic">Primary / Secondary PI</h2>
+                </div>
+                <div class="imgOneLine">
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                    <div class="imgFrame"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        window.addEventListener && window.requestAnimationFrame && document.getElementsByClassName && window
+            .addEventListener('load', function () {
+                'use strict';
+                var e, t, n = document.getElementsByClassName('progressive replace');
+
+                function i() {
+                    t = t || setTimeout(function () {
+                        t = null, r()
+                    }, 300)
+                }
+
+                function r() {
+                    n.length && requestAnimationFrame(function () {
+                        for (var t, i, r = window.innerHeight, a = 0; a < n.length;) 0 < (i = (t = n[a]
+                            .getBoundingClientRect()).top) + t.height && r > i ? (s(n[a]), n[a]
+                            .classList.remove('replace')) : a++;
+                        e = n.length
+                    })
+                }
+
+                function s(e, t) {
+                    var n = e && (e.getAttribute('data-href') || e.href);
+                    if (n) {
+                        var i = new Image,
+                            r = e.dataset;
+                        r && (r.srcset && (i.srcset = r.srcset), r.sizes && (i.sizes = r.sizes)), i.onload =
+                            function () {
+                                requestAnimationFrame(function () {
+                                    n === e.href && (e.style.cursor = 'default', e.addEventListener('click',
+                                        function (e) {
+                                            e.preventDefault()
+                                        }, !1));
+                                    var t = e.querySelector && e.querySelector('img.preview');
+                                    e.insertBefore(i, t && t.nextSibling).addEventListener('animationend',
+                                        function () {
+                                            t && (t.alt && (i.alt = t.alt), e.removeChild(t)), i
+                                                .classList.remove('reveal')
+                                        })
+                                })
+                            }, (t = 1 + (t || 0)) < 3 && (i.onerror = function () {
+                                setTimeout(function () {
+                                    s(e, t)
+                                }, 3e3 * t)
+                            }), i.className = 'reveal', i.src = n
+                    }
+                }
+                window.addEventListener('scroll', i, !1), window.addEventListener('resize', i, !1),
+                    MutationObserver && new MutationObserver(function () {
+                        n.length !== e && r()
+                    }).observe(document.body, {
+                        subtree: !0,
+                        childList: !0,
+                        attributes: !0,
+                        characterData: !0
+                    }), r()
+            }, !1);
+        var person = [
+            "Hello, I’m Wanji Li (Jimmy), the team leader of iGEM 2020 BNDS_China. So far, I have participated in iGEM competition for three years, which makes me an experienced iGEMer. This year, I not only act as the core person in the project and lab design, but I also strengthened my team management skill. Now, I have fulfilled my duty as a three-year iGEMer but I still plan to devote myself in iGEM 2021 as the instructor. Once an iGEMer, always an iGEMer!",
+            "Hello there! This is Kingsly from grade 12 IBDP. Being one of the student leaders in this special year, I engaged all the time from the brain-storming phase to experimentations then to wiki writing phase, including many events in the middle like plasmids designs, HPs, and team management affairs. Besides, I am a professional coffee brewer, charged with the important task of making coffee enough for everyone during the upcoming busy time before Giant Jamboree.",
+            "There was no treachery too base for the world to commit; he knew that. No happiness lasted; he knew that.",
+            "\"There are three things you can do with your life: You can waste it, you can spend it, or you can invest it.The best use of your life is to invest it in something that will last longer than your time on Earth.\" I believe in what we do is a good investment in life; I have trust among my team.",
+            "As a member of HP department of BNDS_China, I feel lucky and honorable to make contribution to the team.",
+            "A Lego player who doesn't love bio&chem is not a good iGEMer.",
+            "I have broad interests and empathy. I like singing and playing the violin. I also love sports, such as badminton and running. Cats and dogs are my favorite creatures, so I knew I have it all when I got one of each. Since I can always understand people while they are talking or making decisions, I’m good at working with people. Last but not least, I believe in science.",
+            "My name is Sophia, which goes after the ancient Greek term of wisdom. According to my friends and family, I am an open-minded, adaptable, and lively girl. I have always had a keen interest in the study of human and I am also concerned with social issues. Over the past year, I’ve come to understand my interest in biology. In the course of the competition, I learned a lot of synthetic biology expertise. More importantly, it also honed my teamwork and time management skills.",
+            "I like reading and jogging and I’m a huge fan of biology. I participated in China High School Biology Olympiad at first, but when I later discovered the pleasure of bioengineering, I joined our iGEM team. Although I’m keen on studying ecology and zoology, doing molecular experiments in laboratory is also interesting and exciting for me. Regardless of different subjects in biology, studying biology is always fun for me.",
+            "Hello guys this is Brant, a senior student from Beijing National Day School, a future Neuroscientist who stepped into a molecular bio lab. I mainly took charge of study design and lab. In the lab, I hate the cycle of failing and redoing but have to admit that I really learned from these failures. Outside our project, I love soccer, swimming, and playing guitar. This is my first year with iGEM, but I assure you it’s not the last. Cheer for every iGEMer!",
+            "Hi, my name is Olivia, Qiyu Fu. I like the word \"YOLO,\" which means \"You Only Live Once.\" Thus, I am always in the process of trying new things and challenging myself, like participating in the iGEM and joining the art design group this time. While learning some cutting edge biotechnology, I also improve my time management skill during the practices of designing. So, enjoy the process!",
+            "We return to reason and faith. There I feel that nothing can befall me in life, — no disgrace, no calamity, which nature cannot repair. Standing on the bare ground, — my head bathed by the blithe air, and uplifted into infinite spaces, — all mean egotism vanishes. I become a transparent eyeball; I am nothing; I see all.",
+            "Hey there! My name is Daniel Zhang. As a 16 years old student, my main job in BNDS_China is coding our team’s wiki. Coding is one of my most joyful hobbies, as well as synthetic biology, and this is also the reason why I take part in IGEM 2020. BNDS_China forever!",
+            "\"The lucidity that was to constitute his torture at the same time crowns his victory.\"",
+            "A designer who hope to help public to easy understand biology through art.",
+            "Hi! I am Yiqi Chen from the Grade 11 IB program of Beijing National Day School. Because of my love for synthetic biology and genetic engineering, I have chosen to join the BNDS-China team to participate in the upcoming iGEM competition. I belong to the HP group in the team. Besides, I have learned a lot from the seniors in the process of participating in the experiment, and I also enjoy this process very much. I hope we can work hard together and get the award we want at last!!!",
+            "\“A salted fish\”",
+            "I'm Yijia Zhang from AP program, BNDS. “The most efficient way to improve yourself is learning to make progress every time and every very next time.” -- this is my motto, and I've been working hard in order to approach it for sixteen years. I'm pleased to participate in iGEM which teaches me not only synthetic Biology but also persistence. Meanwhile, iGEM brings me the most significant experience of doing scientific research during high school, which is helping me with the design of my future.",
+            "Undergraduate student at University College London, as the member of BNDS_China in 2019, he continues to support our team in every aspect with his academic ability and communication skill in 2020. In short, he helds the team together.",
+            "Students at BNDS, also member of BNDS_China in 2019. An expert on math modeling. He leads the modeling team of BNDS_China this year from the very beginning. Our model couldn’t be made possible without the help and support from Hua.",
+            "Undergraduate student at Edinburgh University, an alumnus of Beijing National Day School. An expert in immunology and active helper. He has been mentoring us performing labwork in the summertime, also helping us with the alumni connection. Without Heran’s help, we couldn’t meet so many helpful alumni.",
+            "Songyuan Zhang is an undergraduate student from the School of Life Sciences, Peking University. He is also an alumnus of Beijing National Day School. During our short experiment period, Songyuan has generously provided us with labwork training and mentoring. He’s also an expert at E. Coli fermentation: He’s given us a lot of advice on protein purification of E. Coli.",
+            "This is Deng majoring in graphic design at Academy of Art University, San Francisco. As the only advisor focusing on visual, I hope the team will get a basic understanding of grid, typography, colors, etc. I worked closely with our art design group to create a cohesive visual system throughout all required deliverables. I graduated from BNDS several years ago and it’s a fabulous journey to work with our talented young schoolmates.",
+            "Tingzhen Liu is the former leader of SHSBNU_China in iGEM 2019. As an experienced iGEMer, he used his experience in iGEM to help us throughout our project. From our project design to lab experience. Even during the pandemic, Tingzhen helped us with everything he could: Lab supplies, hardware design, labwork training… Tingzhen helped our team in so many aspects that we couldn’t even list all of them.",
+            "Lab administrator in BNDS, also our Primary Instructor. During the time of the pandemic, Mrs. Kong helps us contacting school resources actively, helping us with school resources and contacting our alumni for help. This project wouldn’t be made possible without her help and our school’s resource.",
+            "Teacher of AP Chemistry and Advanced Chemistry in BNDS, Our Primary Instructor. Mr. Brackett has given us a lot of guidance and ideas during the start phase of the project. With his excellence in Biochemistry and lab experience, Mr. Brackett gives us many professional yet pragmatic advice on our project.",
+            "Yinjun Jia in an undergraduate student from the School of Life Science, Tsinghua University. He is also an alumnus of Beijing National Day School and our secondary PI. Mr. Jia, with his professionalism and expertise, helps to bring our highschool-level project to a new level. Mr. Jia has been graciously providing his help to us throughout the project, from the moment we started our project. His help is crucial to us, and his support is beyond academics. Our team couldn’t stay together without his counseling.",
+
+        ];
+        var personName = ["Wanji Li", "Lixing Wang", "Chongye Han", "Yuyan Chen", "Ruorui Zhang", "Nuo Shi",
+            "Keru Tang", "Shuyan Wu", "Jingcheng Yu", "Haoxuan Yin", "Qiyu Fu", "Wenfei Xiao", "Xiaoda Zhang",
+            "Yuyue Jiang", "Xinyu Zhang", "Yiqi Chen", "Lihan Lin ", "Yijia Zhang", "Rui Wang", "Xiaoyang Hua",
+            "Heran Wang", "Songyuan Zhang", "Haoyue Deng", "Tingzhen Liu (Instructor)", "Ning Kong (Primary PI)",
+            "David Brackett (Primary PI)", "Yinjun Jia (Secondary PI)"
+        ];
+
+        console.log(personName[2]);
+        var getClass = document.getElementsByClassName("imgFrame");
+        for (var i = 0; i < person.length; i++) {
+            var pNode = document.createElement("p");
+            var aNode = document.createElement("a");
+            var ctlImgNode = document.createElement("div");
+            var imgNode = document.createElement("img");
+            var boxNode = document.createElement("div");
+            var maskNode = document.createElement("div");
+            var bgNode = document.createElement("div");
+            var nameNode = document.createElement("p");
+            var intrText = document.createTextNode(person[i]);
+            var nameText = document.createTextNode(personName[i]);
+
+            getClass[i].appendChild(bgNode).appendChild(maskNode).appendChild(boxNode).appendChild(pNode);
+            pNode.appendChild(intrText);
+            boxNode.appendChild(ctlImgNode).appendChild(aNode).appendChild(imgNode);
+            getClass[i].appendChild(nameNode);
+            nameNode.appendChild(nameText);
+            pNode.setAttribute("class", "note");
+
+            ctlImgNode.setAttribute("id", "img" + i);
+            aNode.setAttribute("class", "progressive replace");
+            aNode.setAttribute("data-href", "images/" + i + ".jpg");
+            imgNode.setAttribute("class", "progressive preview");
+            imgNode.setAttribute("src",
+                "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAcAAD/4QONaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OGVkMjRiZDgtYzFmOC1hMjQ1LTk3NmQtNzFmZmEyZmY3MmE5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjYwQTVEMTgwMTExMjExRUI5MDJEQkUxQTJBNEM4QUU4IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjYwQTVEMTdGMTExMjExRUI5MDJEQkUxQTJBNEM4QUU4IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhmZjc2M2JmLTVjZjEtMTk0ZS04YzM0LTNiNTMwNTJlZjcwMiIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmZlZmViZmYwLTA5NzctODc0NC1iMGM1LWMyOTY2MTkyMjkxMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEABAMDAwNDBENDREYEA4QGB0VEREVHSEXFxcXFyEgGRwbGxwZICAmJyknJiAyMjY2MjJBQUFBQUFBQUFBQUFBQUEBEhAQEhQSFhMTFhYRFREWGxYXFxYbKBsbHRsbKDMlICAgICUzLTEpKSkxLTg4MzM4OEFBQUFBQUFBQUFBQUFBQf/AABEIADwAPAMBIgACEQEDEQH/xACMAAADAAMBAQAAAAAAAAAAAAAEBQYAAgMBBwEBAQEBAQAAAAAAAAAAAAAAAQACAwQQAAECBAIGBwYEBwAAAAAAAAECAwARBAUSEyExQVEiFGEyQlJiMwZxgaGxIxXB0YJDcrJjJEQlFhEAAgEEAQMEAwAAAAAAAAAAAAECESExQRJxgQNRYZEiMlKC/9oADAMBAAIRAxEAPwBo76ezW0rQ9hWoTIOrTAKrHdmPKdmBqCVEQ+rK9u306CoYlkAITvlvgKgvfNv5LqAhSuoRqj1KU6VyjNgCju9ZSPCnr5lE5Eq6yen2RSAhQCgZg6QYWXq2qq6c1DaZus696k7RGnp+vaWgUdQqS0+Uo9od2CVGuSWMogu40Br6ZTSfMTxIPSIVWK6micNHVTS2VS09hX5RWhIToAlCK/WcPJVW0yZPJE3EDtjf7YzGSf1lhk1sZ3CkRW0imp6SMTaumIrJqczk+Lr+X4t8OrBcy4OTeVOXlE/yw35drO5rAMzq4uiFRar4/Uq7J+/Kx3BpsngkAPYTA60IpryhKeFCVJl7xGVM6u3N1QP1ab6To2y7JjR1l6tpE1jfE4zwOga9GpUdFZJfyBbMSwfOJ+72FQUqqoh4ltDWDvTHvp27F48o+ZrA4VHaBFHHF8oSNZRN2i/kFNLXHTqQ6d/dVFApyYkNRifvlqQtCqtlMlDzUjaO9HSw3AvsmmdM3WeqT2kRqUU1yj3QV0KLqwbdcQ61woWcxHQdoio5tv7ZzfZwYvfC31CwH6PNHWZMx7NsKedV9kyJ/uy/TKcabrFS3GxbONGh0uVdKNa0GY8SIMsNawwl5p9QRPiE9u8Rlm47w4o+M/GDa305TvLU60stFRmU6xONSaq07VoAqtv1b1jYEm8RVo2CLZpeNPSIT262M0CTgOJxXWWYZ05ksp3xy8jTxoUbuoBnMTSrQREamdBeghOhIXh/SqLciYlEXdR/vAB3kQ+J5XsTHtxE6F/+AxFYzy8p6MWqLutaxUbwHcPyiCl9KXihX4S6otjuqaqbXcDUNJmgkqSdhB1gwT/0ysMlU/F0HRFA5l4Tmyw+KUoXOfZMfHl4uiFtW5RuXQSu3+4OTSygInqkMRjk3SXt88wnHi2EmR9wimb5H9jLlslKPajmcv8AtZZmyf4Qp/rFfICFu9XmgVgqUFYGxY/GNrXTv3S6GtdThQDiJ2aNQEdqj71/kavHhl8Yb2rnssZ2VlbMvX8NEDdnxUeVL0HqGOM4kLTPrAiPnuUeYyf6uH4xf3DmeTd5WWbIynu6IgNnazsfvxRiNeEuxbR//9k="
+            );
+
+
+            boxNode.setAttribute("class", "imgbox");
+
+            maskNode.setAttribute("class", "mask");
+            maskNode.setAttribute("id", "mask" + i);
+            maskNode.setAttribute("onmouseenter", "showNote(" + i + ")");
+            maskNode.setAttribute("onmouseleave", "showImg(" + i + ")");
+            maskNode.setAttribute("style", "background-color:rgba(4, 19, 102, 0.25)");
+
+            bgNode.setAttribute("class", "img_bg");
+            nameNode.setAttribute("class", "name");
+        }
+
+        function circle_on(index) {
+
+            var last_index;
+            for (var i = 1; i < person.length; i++) {
+                var anchor = "#C" + i;
+                var item = "circle" + i;
+                var circle = document.getElementById(item);
+                if (i == index) {
+                    circle.setAttribute("fill", "#F1B069");
+                    circle.setAttribute("r", "12");
+                    location.href = anchor;
+                } else {
+                    circle.setAttribute("fill", "#61AACA");
+                    circle.setAttribute("r", "10");
+                }
+
+            }
+
+        }
+
+
+        function showNote(e) {
+            console.log("here-" + e);
+            var index_img = "img" + e;
+            var index_mask = "mask" + e;
+            console.log(index_img);
+            for (var i = 0; i < person.length; i++) {
+                var getImg = document.getElementById(index_img);
+                var getMask = document.getElementById(index_mask);
+                if (i == e) {
+                    getImg.setAttribute("style",
+                        "opacity:0;");
+                    var timer = window.setInterval(func, 20);
+                    var alp = 0;
+
+                    function func() {
+                        if (alp < 0.7) alp += 0.1;
+                        else window.clearInterval(timer);
+                        getMask.setAttribute("style", "background-color:rgba(4, 19, 102," + alp + ")");
+                    }
+                    break;
+
+                }
+            }
+        }
+
+        function showImg(e) {
+            var index_img = "img" + e;
+            var index_mask = "mask" + e;
+            for (var i = 0; i < person.length; i++) {
+                var getImg = document.getElementById(index_img);
+                var getMask = document.getElementById(index_mask);
+                if (i == e) {
+                    var timer = window.setInterval(func, 20);
+                    var alp = 0.8;
+                    var opt = 0;
+
+                    function func() {
+                        if ((alp > 0.25) && (opt < 1)) {
+                            alp -= 0.1;
+                            opt += 0.1;
+                        } else {
+                            window.clearInterval(timer);
+                            opt = 1;
+                            alp = 0.25;
+                        }
+                        getImg.style.opacity = (opt);
+                        getMask.style.backgroundColor = "rgba(4, 19, 102," + alp + ")";
+                    }
+                    break;
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.par-module1{
+    width: 1024px;
+    box-sizing: border-box;
+    padding: 40px 0 0 85px;
+    background: #F3F3F3;
+}
+.par-module1 .title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.par-module1 .tips{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 61px 0 30px;
+}
+.par-module1 .par-m1-box1{
+    display: flex;
+}
+.par-module1 .par-m1-box1 li:nth-child(1){
+    width: 529px;
+    margin-right: 32px;
+}
+.par-module1 .par-m1-box1 li:nth-child(2){
+    width: 291px;
+}
+.par-module1 .par-m1-box1 li img{
+    width: 529px;
+    height: 397px;
+}
+.par-module1 .par-m1-box1 li .con{
+    width: 291px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.par-module1 .textcen1{
+    font-size: 12px;
+    color: #0A0A0A;
+    line-height: 16px;
+    margin: 14px 0 37px;
+    text-align: justify;
+    width: 764px;
+}
+.par-module1 .par-m1-box2{
+    display: flex;
+}
+.par-module1 .par-m1-box2 li:nth-child(1){
+    margin-right: 13px;
+}
+.par-module1 .par-m1-box2 li{
+    width: 434px;
+}
+.par-module1 .par-m1-box2 li img{
+    width: 434px;
+    height: 333px;
+}
+.par-module1 .textcen2{
+    font-size: 12px;
+    line-height: 16px;
+    text-align: justify;
+    width: 773px;
+    margin: 32px 0 34px;
+    color: #0A0A0A;
+}
+.par-module1 .par-m1-img{
+    width: 896px;
+    height: 672px;
+}
+.par-module1  .btnIcon-box{
+    margin-top: 85px;
+    box-sizing: border-box;
+    padding-right: 116px;
+    overflow: hidden;
+}
+.par-module1   .btnIcon{
+    width: 213px;
+    height: 133px;
+    float: right;
+}

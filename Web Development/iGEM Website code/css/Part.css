@@ -1,0 +1,70 @@
+.part-module1{
+    width: 1024px;
+    box-sizing: border-box;
+    padding: 40px 0 0 85px;
+    background: #F3F3F3;
+}
+.part-module1 .title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+.part-module1 .table{
+    width: 896px;
+    box-sizing: border-box;
+    background: #FFF;
+    border: 1px solid #f2f2f2;
+}
+.part-module1 .table li{
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.part-module1 .table li:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+}
+.part-module1 .table li:last-child{
+    border-bottom: none;
+}
+.part-module1 .table li p{
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid #f2f2f2;
+    padding-left: 4px;
+}
+.part-module1 .table li p:nth-child(1){
+    width: 188px;
+}
+.part-module1 .table li p:nth-child(2){
+    width: 90px;
+  
+}
+.part-module1 .table li p:nth-child(3){
+    width: 407px;
+}
+.part-module1 .table li p:nth-child(4){
+    width: 142px;
+}
+.part-module1 .table li p:nth-child(5){
+    width: 67px;
+    border-right: none;
+}
+
+.part-module1 .table li a{
+    color: #79a1db;
+}
+.part-module1 .btnIcon-box{
+    margin-top: 80px;
+    box-sizing: border-box;
+    padding-right: 116px;
+    overflow: hidden;
+}
+.part-module1  .btnIcon{
+    width: 213px;
+    height: 133px;
+    float: right;
+}

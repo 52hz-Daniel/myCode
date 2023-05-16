@@ -1,0 +1,94 @@
+.prop-module1{
+    width: 1024px;
+    height: 974px;
+    box-sizing: border-box;
+    padding: 40px 0 0 85px;
+    background: #F3F3F3;
+}
+.prop-module1 .title{
+    font-size: 39px;
+    font-weight: bold;
+}
+.prop-module1 .tips{
+    font-size: 31px;
+    font-weight: bold;
+    margin: 62px 0 25px;
+}
+.prop-module1 .con{
+    width: 770px;
+    text-align: justify;
+    font-size: 23px;
+    line-height: 31px;
+}
+.prop-module1 img{
+    width: 896px;
+    height: 361px;
+    margin-top: 36px;
+}
+.prop-module1 .text-box{
+    width: 919px;
+    height: 69px;
+    background: #F1B069;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.prop-module2{
+    width: 1024px;
+    height: 656px;
+    background: #041366;
+    box-sizing: border-box;
+    padding: 144px 0 0 85px;
+}
+.prop-module2 ul li:nth-child(1){
+    margin-bottom: 87px;
+
+}
+.prop-module2 ul li .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.prop-module2 ul li .con{
+    width: 728px;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+}
+.prop-module2 ul li:nth-child(2) .con{
+    width: 771px;
+}
+.prop-module3{
+    width: 1024px;
+    box-sizing: border-box;
+    padding: 81px 0 0 85px;
+    background: #F3F3F3;
+}
+.prop-module3 .title{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.prop-module3  .con1,.prop-module3  .con2{
+    font-size: 12px;
+    line-height: 16px;
+    width: 767px;
+}
+.prop-module3  .con1{
+    margin-bottom: 93px;
+}
+.prop-module3 .btnIcon-box{
+    margin-top: 91px;
+    box-sizing: border-box;
+    padding-right: 116px;
+    overflow: hidden;
+}
+.prop-module3  .btnIcon{
+    width: 213px;
+    height: 133px;
+    float: right;
+}

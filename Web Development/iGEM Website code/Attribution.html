@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribution</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/Attribution.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            /*  height:1.5rem;*/
+            min-width: 3rem;
+            padding: 0 10px;
+        }
+        th {
+
+            color: black ;
+        }
+    </style>
+</head>
+<body>
+    <div class="y-content">
+        <div class="at-module1">
+            <h2>ATTRIBUTION</h2>
+            <h4>Attribution From Team Members</h4>
+            <table id="tb">
+            </table>
+
+            <script>
+                var items = ["", "Project Design", "Hardware", "Human Practice", "Lab", "Model", "Art", "Outreach", "Wiki"];
+                var data = new Array();
+                data[1] = ["Wanji Li", 1, 3, 3, 3, 1, "", 2, 2];
+                data[2] = ["Chonye Han", 1, 2, 3, 2, "", "", 3, 2];
+                data[3] = ["Lixing Wang", 2, "", 2, 3, "", "", 1, 2];
+                data[4] = ["Jiangcheng Yu", 2, 2, 2, 3, "", "", 2, 2];
+                data[5] = ["Haoxuan Yin", 2, "", "", 3, "", "", "", 2];
+                data[6] = ["Nuo Shi", 2, "", "", 3, "", "", "", 2];
+                data[7] = ["Ruorui Zhang", "", "", 2, 2, "", "", 1, 1];
+                data[8] = ["Lihan Lin", 3, 2, 2, 2, "", "", 1, 2];
+                data[9] = ["Yuyue Jiang", "", "", 1, 1, 3, "", "", "2+"];
+                data[10] = ["Yijia Zhang", "", "", 1, 2, "", "", "", 2];
+                data[11] = ["Qiyu Fu", "", "", 1, 1, "", 3, 2, 2];
+                data[12] = ["Yiqi Chen", "", "", 1, 1, "", "", "", 1];
+                data[13] = ["Yuyan Chen", 1, "", "", 2, "", "", "", ""];
+                data[14] = ["Xinyu Zhang", "", "", "", 1, "", "1+", "", ""];
+                data[15] = ["Wenfei Xiao", 1, 2, "", 2, "", "1+", "", 2];
+                data[16] = ["Xiaoda Zhang", "", "", "", 2, "", "", "", 3];
+                data[17] = ["Keru Tang", "", "", 1, 2, "", "", "", 1];
+                data[18] = ["Shuyan Wu", "", "", 1, 2, "", "", "", 1];
+
+
+                var tableNode = document.getElementById("tb");
+
+                for (var i = 0; i < 19; i++) {
+                    var rawNode = document.createElement("tr");
+                    var nodeLink = tableNode.appendChild(rawNode);
+                    for (var j = 0; j < 9; j++) {
+                        if (i == 0) {
+                            var thNode = document.createElement("th");
+                            var textNode = document.createTextNode(items[j]);
+                            nodeLink.appendChild(thNode).appendChild(textNode);
+                            thNode.style.backgroundColor = "#FFFF00";
+                        }
+                        else {
+                            var tdNode = document.createElement("td");
+                            var textNode = document.createTextNode(data[i][j]);
+                            nodeLink.appendChild(tdNode).appendChild(textNode);
+                            if (i % 2 == 0) tdNode.style.backgroundColor = "#ddd";
+                        }
+
+
+                    }
+
+                }
+
+            </script>
+            <!--  <img src="https://2020.igem.org/wiki/images/f/fd/T--BNDS_China--Team_Member_Kong_Ning.jpeg" alt="">-->
+            <i class="imgTitle">Remark: attribution from team members is evaluated according our rubric. See below.</i>
+            <embed src="https://2020.igem.org/wiki/images/c/ca/T--BNDS_China--Attribution_Evaluation_Rubric.pdf" type="application/pdf" width=899px height=560px style="padding-top: 5px">
+        </div>
+        <div class="at-module2">
+            <h3>Attribution From Others</h3>
+            <p>
+                2020 is a tough year for basically everyone, BNDS_China isn’t an exception. We’ve been through numerous troubles that we couldn’t even list all.
+                All of our progress and awards couldn’t be made without help from others, especially our alumni of Beijing National Day School and our beloved
+                teachers. 
+            </p>
+            <h5>David Brackett</h5>
+            <p>
+                Teacher of AP Chemistry and Advanced Chemistry in BNDS, Our Primary Instructor. Mr. Brackett has given us a lot of guidance and ideas during 
+                the start phase of the project. With his excellence in Biochemistry and lab experience, Mr. Brackett gives us many professional yet pragmatic
+                advice on our project. 
+            </p>
+            <h5>Ning Kong</h5>
+            <p>
+                Lab administrator in BNDS, also our Primary Instructor. During the time of the pandemic, Mrs. Kong helps us contacting school resources actively,
+                helping us with school resources and contacting our alumni for help. This project wouldn’t be made possible without her help and our school’s
+                resource. 
+            </p>
+            <h5>Tingzhen Liu</h5>
+            <p>
+                Tingzhen Liu is the former leader of SHSBNU_China in iGEM 2019. As an experienced iGEMer, he used his experience in iGEM to help us
+                throughout our project. From our project design to lab experience. Even during the pandemic, Tingzhen helped us with everything he could: Lab
+                supplies, hardware design, labwork training… Tingzhen helped our team in so many aspects that we couldn’t even list all of them. 
+            </p>
+            <h5>Songyuan Zhang</h5>
+            <p>
+                Songyuan Zhang is an undergraduate student from the School of Life Sciences, Peking University. He is also an alumnus of Beijing National Day
+                School. During our short experiment period, Songyuan has generously provided us with labwork training and mentoring. He’s also an expert at E.
+                Coli fermentation: He’s given us a lot of advice on protein purification of E. Coli. 
+            </p>
+            <h5>Yinjun Jia</h5>
+            <p>
+                Yinjun Jia in an undergraduate student from the School of Life Science, Tsinghua University. He is also an alumnus of Beijing National Day School
+                and our secondary PI. Mr. Jia, with his professionalism and expertise, helps to bring our highschool-level project to a new level. Mr. Jia has been
+                graciously providing his help to us throughout the project, from the moment we started our project. His help is crucial to us, and his support is
+                beyond academics. Our team couldn’t stay together without his counseling. 
+            </p>
+            <h5>Heran Wang</h5>
+            <p>
+                Undergraduate student at Edinburgh University, an alumnus of Beijing National Day School. An expert in immunology and active helper. He has
+                been mentoring us performing labwork in the summertime, also helping us with the alumni connection. Without Heran’s help, we couldn’t meet so
+                many helpful alumni. 
+            </p>
+            <h5>Wenjin Liu</h5>
+            <p>
+                As a graduate student of Beijing Language and Culture University and Cambridge University, Liu is a proficient English speaker and writer. Most of
+                our paperwork, including the proposal that gets the Revive and Restore grant was proof-read by him. 
+            </p>
+            <h5>Haoyue Deng</h5>
+            <p>
+                As an undergraduate student of Academy of Art University, majoring in graphic design, Deng helped the team design and build up the overall
+                visual system. She is detail-driven and values the consistency of deliverables, in order to enhance our presentation.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

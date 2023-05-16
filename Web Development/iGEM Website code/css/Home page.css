@@ -1,0 +1,146 @@
+.hom-module1{
+    width: 1024px;
+    height: 480px;
+    background: url('https://2020.igem.org/wiki/images/a/ae/T--BNDS_China--HomeBackground.png') no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding-top: 175px;
+    position: relative;
+}
+.hom-module1 img{
+    width: 713px;
+    height: 132px;
+    margin: 0 auto;
+}
+.hom-module1 .hom-m1-nose{
+    position: absolute;
+    width: 1024px;
+    height: 480px;
+    background: url('https://2020.igem.org/wiki/images/f/f5/T--BNDS_China--HomeMustache2.png') no-repeat ;
+    background-size: 100% 100%;
+    left: 0;
+    top: 0;
+}
+.hom-module1 .hom-m1-nose:hover{
+    background: url('https://2020.igem.org/wiki/images/7/76/T--BNDS_China--HomeMustache1.png') no-repeat ;
+    background-size: 100% 100%;
+}
+.hom-module2{
+    width: 1024px;
+    box-sizing: border-box;
+    padding: 60px 0 0 85px;
+    background: #F3F3F3;
+}
+.hom-module2 .title{
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.hom-module2 .con1{
+    font-size: 24px;
+    color: #0A0A0A;
+    line-height: 32px;
+    width: 825px;
+    text-align: justify;
+    margin-bottom: 83px;
+}
+.hom-module2 .hom-m2-box{
+    display: flex;
+    width: 896px;
+    flex-wrap: wrap;
+}
+.hom-module2 .hom-m2-box li{
+    width: 448px;
+    height: 448px;
+    box-sizing: border-box;
+}
+.hom-module2 .hom-m2-box li p{
+    margin-left: 46px;
+    width: 330px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: justify;
+}
+.hom-module2 .hom-m2-box li:nth-child(1){
+    background: #041366;
+    padding-top: 90px;
+    color: #FFF;
+}
+.hom-module2 .hom-m2-box li:nth-child(1) .liImg{
+    width: 190px;
+    height: 141px;
+    margin: 0 auto;
+    background: url('https://2020.igem.org/wiki/images/b/b2/T--BNDS_China--2x2_before_hover_team.png') no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 75px;
+}
+.hom-module2 .hom-m2-box li:nth-child(1) .liImg:hover{
+    background: url('https://2020.igem.org/wiki/images/9/9b/T--BNDS_China--2x2_hover_team.png') no-repeat;
+    background-size: 100% 100%;
+}
+.hom-module2 .hom-m2-box li:nth-child(2){
+    background: #F3F3F3;
+    padding-top: 77px;
+    border-top: 1px solid #707070;
+    border-right: 1px solid #707070;
+    color: #0A0A0A;
+}
+.hom-module2 .hom-m2-box li:nth-child(2) .liImg{
+    width: 190px;
+    height: 167px;
+    margin: 0 auto;
+    background: url('https://2020.igem.org/wiki/images/1/1f/T--BNDS_China--2x2_before_hover_project.png') no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 33px;
+}
+.hom-module2 .hom-m2-box li:nth-child(2) .liImg:hover{
+    background: url('https://2020.igem.org/wiki/images/a/ac/T--BNDS_China--2x2_hover_project.png') no-repeat;
+    background-size: 100% 100%;
+}
+.hom-module2 .hom-m2-box li:nth-child(3){
+    background: #F3F3F3;
+    padding-top: 51px;
+    border-bottom: 1px solid #707070;
+    border-left: 1px solid #707070;
+    color: #0A0A0A;
+}
+.hom-module2 .hom-m2-box li:nth-child(3) .liImg{
+    width: 190px;
+    height: 167px;
+    margin: 0 auto;
+    background: url('https://2020.igem.org/wiki/images/5/5f/T--BNDS_China--2x2_before_hover_hp.png') no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 33px;
+}
+.hom-module2 .hom-m2-box li:nth-child(3) .liImg:hover{
+    background: url('https://2020.igem.org/wiki/images/f/f2/T--BNDS_China--2x2_hover_hp.png') no-repeat;
+    background-size: 100% 100%;
+}
+.hom-module2 .hom-m2-box li:nth-child(4){
+    background: #041366;
+    padding-top: 77px;
+    color: #FFF;
+}
+.hom-module2 .hom-m2-box li:nth-child(4) .liImg{
+    width: 190px;
+    height: 157px;
+    margin: 0 auto;
+    background: url('https://2020.igem.org/wiki/images/2/2d/T--BNDS_China--2x2_before_hover_lab.png') no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 33px;
+}
+.hom-module2 .hom-m2-box li:nth-child(4) .liImg:hover{
+    background: url('https://2020.igem.org/wiki/images/0/04/T--BNDS_China--2x2_hover_lab.png') no-repeat;
+    background-size: 100% 100%;
+}
+.hom-module2   .btnIcon-box{
+    margin-top: 80px;
+    box-sizing: border-box;
+    padding-right: 116px;
+    overflow: hidden;
+}
+.hom-module2    .btnIcon{
+    width: 213px;
+    height: 133px;
+    float: right;
+}

@@ -1,0 +1,264 @@
+html, body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, input, img, select, textarea, form, fieldset, iframe, legend {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+html,body{
+    font-family: "Leon Sans",Arial;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 公共图片底部字体 */
+.imgTitle{
+    display: block;
+    margin: 10px 0 30px;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+/* 安全宽度 */
+.y-content{
+    width: 1024px;
+    margin: 0 auto;
+}
+/* 红色按钮 */
+.redBtn{
+    display: block;
+    width: 188px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background: #E1512F;
+    margin-top: 44px;
+    cursor: pointer;
+}
+/* 公共颜色 */
+.yellow{
+    color: #F1B069 !important;
+}
+/* 蓝色 */
+.blue{
+    color: #0B235F !important;
+}
+.black{
+    color: #0B235F !important;
+}
+/* 亮蓝色 */
+.bluebold{
+    color: #2544EC !important;
+}
+.white{
+    color: #FFF !important;
+}
+
+/* Header */
+#teamLogo {
+    padding-right: 320px;
+    padding-top: 16px;
+    width: 240px;
+    height: 43.2px;
+}
+li {
+    list-style: none;
+}
+#teamLogoWidth{
+     width:240px;
+}
+#first_ul {
+    /* position: relative; */
+    padding-left: 4%;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-flex;
+    background-color: white;
+    height: 70px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    list-style-type: none;
+    zoom: 1 !important;
+}
+
+.litop {
+    padding-top: 23px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    position: relative;
+}
+.litop:hover ul{
+    display:block;
+
+    align-content: flex-start;
+}
+
+    .litop:hover {
+        background-color: rgba(97,170,202,0.5);
+    }
+    
+
+.headerMain {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 18px;
+    font-weight: 600;
+}
+.astyle{
+    text-decoration: none;
+     color: dimgray;
+    font-size: 18px;
+    font-weight: 600;
+}
+.wordType {
+    color: dimgray;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.dropdown {
+    position: absolute;
+    display: none;
+    line-height: 33px;
+    padding-top: 30px;
+    float: left;
+    padding-left:0;
+    margin-left:-30px
+}
+.lidown {
+    text-align: left;
+    background-color: #F3F3F3;
+    padding: 0.6rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+    .lidown:hover {
+        background-color: rgba(97,170,202,0.5);
+    }
+
+
+#smallPic {
+    position: absolute;
+    min-width: 1100px;
+}
+
+#largePic {
+    min-width: 1100px;
+    margin-bottom: 0;
+}
+/* Footer */
+footer a {
+    text-decoration: none;
+}
+
+#footerOut {
+    font-family: "Leon Sans",Arial;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#footerUp {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: solid 2px #F1B069;
+    border-top: solid 2px #F1B069;
+    height: 274px;;
+}
+
+.footerIn {
+    display: inline-grid;
+    margin-right: 96px;
+    /* margin-left: 2rem; */
+}
+
+.logoUp {
+    width: 224px;
+    height: 80px;
+    padding: 32px 32px 16px 16px;
+}
+
+.logoDown {
+    width: 224px;
+    height: 80px;
+    padding: 16px 32px 32px 16px;
+}
+
+.footerMain {
+    color: #E1512F;
+    font-weight: bold;
+    /*padding:1rem;*/
+}
+
+#footerBottom {
+    /*/align-content :flex-start;*/
+    display: inline-flex;
+    padding-top: 60px;
+}
+
+.footerDownMid {
+    width: 288px;
+}
+
+.footerUpMid {
+    display: inline-flex;
+}
+
+.footerLi {
+    padding: 12.8px;
+    list-style: none;
+}
+
+.footerRegular {
+    color: black;
+}
+
+
+/* 媒体查询 */
+/* @media(max-width:1280px){
+    .y-content{
+        zoom: 1;
+    } 
+    #first_ul{
+        zoom: 1;
+    }
+}
+
+
+@media(max-width:1366px){
+    .y-content{
+        zoom: 1.1;
+    } 
+    #first_ul{
+        zoom: 1.1;
+    }
+}
+
+
+
+@media(max-width:1440px){
+    .y-content{
+        zoom: 1.2;
+    } 
+    #first_ul{
+        zoom: 1.2;
+    }
+}
+
+@media(max-width:1920px){
+    .y-content{
+        zoom: 1.6;
+    } 
+    #first_ul{
+        zoom: 1.6;
+    }
+} */
